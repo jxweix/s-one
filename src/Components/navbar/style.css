@@ -1,0 +1,129 @@
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.endContent {
+  a {
+    padding: 0 5px;
+  }
+}
+
+nav ul .endContent {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+nav li {
+  height: 12px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.navbar {
+  padding: 1vh 0;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: center;
+  float: left;
+  background-color: #000;
+  background-size: auto, auto, auto;
+  background-position: left top, center top, right top;
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-image: url("/images/SOne_index_bgmenu01.png"),
+    url("/images/SOne_index_bgmenu02.png"),
+    url("/images/SOne_index_bgmenu03.png");
+
+  li a {
+    color: white;
+    height: 15px !important;
+    font-size: 15px;
+    justify-content: start;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  li {
+    cursor: pointer;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  li a:hover {
+    width: 100%;
+    color: rgb(255, 128, 0);
+  }
+}
+
+li a:hover .menu-icon {
+  content: url("/images/SOne_Mobile_menuho.png");
+}
+
+.router {
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+
+  span {
+    justify-content: end !important;
+  }
+
+  p{
+    text-align: end;
+  }
+}
+
+.showOn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 100%;
+  }
+  .showOn {
+    display: block;
+    padding: 0;
+    opacity: 1;
+  }
+  .hideOn {
+    display: none;
+  }
+  .layoutTop {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
+}
