@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
+const nextConfig = {
+    reactStrictMode: true,
+    async redirects() {
+        return [
+            {
+                source: '/',
+                destination: '/homepage',
+                permanent: false,
+            },
+        ];
+    },
+};
 export default nextConfig;
