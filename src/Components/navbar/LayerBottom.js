@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from "next/image";
+import './style.css';
 
 function LayerBottom() {
     return (

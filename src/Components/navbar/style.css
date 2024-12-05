@@ -6,6 +6,7 @@ nav ul {
   align-items: center;
   font-size: 16px;
 }
+
 .endContent {
   a {
     padding: 0 5px;
@@ -96,7 +97,7 @@ li a:hover .menu-icon {
     justify-content: end !important;
   }
 
-  p{
+  p {
     text-align: end;
   }
 }
@@ -105,18 +106,38 @@ li a:hover .menu-icon {
   display: none;
 }
 
-@media (max-width: 800px) {
+.layoutTop {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.layoutBot {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
   .sidebar {
     width: 100%;
   }
+
   .showOn {
     display: block;
     padding: 0;
     opacity: 1;
   }
+
   .hideOn {
     display: none;
   }
+
   .layoutTop {
     display: none;
   }
