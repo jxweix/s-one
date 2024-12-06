@@ -1,0 +1,57 @@
+.Safety {
+  display: flex;
+
+  p {
+    font-size: 18px;
+  }
+  h3 {
+    color: #f05a28;
+    padding-bottom: 1vh;
+  }
+  h5 {
+    width: fit-content;
+    font-size: 60px;
+  }
+}
+.ItemEvent {
+  position: relative;
+  width: 100%;
+  min-width: 200px;
+  align-content: center;
+
+  span {
+    top: 0.5vh;
+    left: 0.5vh;
+  }
+  p {
+    font-size: 18px;
+    margin: 0.5vh;
+    line-height: none;
+  }
+}
+
+.customInput {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-size: 16px;
+
+  p {
+    white-space: nowrap;
+  }
+
+  input {
+    height: 30px;
+    width: fit-content;
+    margin-left: 4px;
+    max-width: 150px;
+    border: 1px solid #f05a28;
+  }
+}
+
+.BoxEvent {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 8px;
+}

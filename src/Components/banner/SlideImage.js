@@ -28,7 +28,7 @@ export default function SlideImage() {
   ]
 
   return (
-    <div className="slider-container my-[auto] col-span-1 items-center md:col-span-2">
+    <div className="slider-container my-[auto] col-span-2 items-center md:col-span-2">
       <Slider className="bg-black text-white" {...settings}>
         {images.map((src, index) => (
           <div key={index} className="relative w-full h-[250px] md:h-[324px]">
