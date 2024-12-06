@@ -1,24 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: false,
-    webpack(config) {
-        config.module.rules.push({
-          test: /\.mjs$/,
-          type: 'javascript/auto',
-        });
-        return config;
+  reactStrictMode: false,
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.mjs$/,
+      loader: 'babel-loader',
+      type: 'javascript/auto',
+    });
+    return config;
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/homepage',
+        permanent: false,
       },
-    async redirects() {
-        return [
-            {
-                source: '/',
-                destination: '/homepage',
-                permanent: false,
-            },
-        ];
-    },
-    experimental: {
-        transpilePackages: ['@nextui-org/react'],
-      },
+    ];
+  },
+  transpilePackages: ['@nextui-org/react', 'framer-motion'],
 };
 export default nextConfig;
