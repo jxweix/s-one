@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
+    reactStrictMode: false,
+    webpack(config) {
+        config.module.rules.push({
+          test: /\.mjs$/,
+          type: 'javascript/auto',
+        });
+        return config;
+      },
     async redirects() {
         return [
             {
@@ -10,5 +17,8 @@ const nextConfig = {
             },
         ];
     },
+    experimental: {
+        transpilePackages: ['@nextui-org/react'],
+      },
 };
 export default nextConfig;
