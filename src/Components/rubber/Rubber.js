@@ -1,7 +1,6 @@
 import React from 'react'
-import { Card, CardBody, CardHeader } from "@nextui-org/card";
+import { Image, Select, Card, CardBody, CardHeader } from '@nextui-org/react';
 import './style.css'
-import { Image, Select } from '@nextui-org/react';
 
 function Rubber() {
     return (

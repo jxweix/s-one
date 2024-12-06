@@ -1,24 +1,7 @@
-import localFont from "next/font/local";
-import { NextUIProvider } from "@nextui-org/react";
 import LayerTop from "@/Components/navbar/LayerTop"
 import LayerBottom from "@/Components/navbar/LayerBottom"
+import { Providers } from "./providers";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-const supermarketSans = localFont({
-  src: "./fonts/supermarket.ttf",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -28,14 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${supermarketSans.variable} antialiased`}
-      >
-        <NextUIProvider>
+      <body>
+        <Providers>
           <LayerTop />
           {children}
           <LayerBottom />
-        </NextUIProvider>
+        </Providers>
       </body>
     </html>
   );
