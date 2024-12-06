@@ -7,6 +7,7 @@ const nextConfig = {
       loader: 'babel-loader',
       type: 'javascript/auto',
     });
+    config.output.publicPath = '/static/';
     return config;
   },
   async redirects() {
