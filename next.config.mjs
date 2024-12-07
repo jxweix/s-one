@@ -1,14 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.mjs$/,
-      loader: 'babel-loader',
-      type: 'javascript/auto',
-    });
-    return config;
-  },
   async redirects() {
     return [
       {
@@ -18,6 +10,5 @@ const nextConfig = {
       },
     ];
   },
-  transpilePackages: ['@nextui-org/react', 'framer-motion'],
 };
 export default nextConfig;
