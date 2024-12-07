@@ -10,7 +10,7 @@ import SafetyTip from '@/Components/boxItem/SafetyTip';
 const page = () => {
     return (
         <div className='container'>
-            <div className='grid md:grid-cols-3 mb-[8px] md:mb-0 sm:pb-0 sm:grid-cols-2 grid-cols-1 gap-0 md:gap-2'>
+            <div className='grid md:grid-cols-3 md:gap-2 mb-[8px] md:mb-0 sm:pb-0 sm:grid-cols-2 grid-cols-1 gap-0 '>
                 <div className='justify-items-center py-2 col-span-2 md:col-span-1'>
                     <Rubber />
                 </div>

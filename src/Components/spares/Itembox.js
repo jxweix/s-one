@@ -14,7 +14,7 @@ function Itembox() {
         <div className='flex flex-col sm:flex-col md:flex-row items-center content-center gap-2 md:gap-0 md:space-x-2'>
             {items.map((item, index) => (
                 <div key={index} 
-                className="items-center grow bg-[#f05a28] w-full flex justify-center">
+                className="items-center grow bg-[#f05a28] w-full justify-items-center ">
                     <Image src={`/images/${item}.jpg`} radius='none' alt='icon' />
                 </div>
             ))}

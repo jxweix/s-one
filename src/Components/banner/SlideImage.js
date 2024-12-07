@@ -32,7 +32,7 @@ export default function SlideImage() {
       <Slider className="bg-black text-white" {...settings}>
         {images.map((src, index) => (
           <div key={index} className="relative w-full h-[250px] md:h-[324px]">
-            <Image src={src} height={350} alt={`Slide ${index}`} className="slide-image" />
+            <Image src={src} height={350} alt={`Slide ${index}`} radius='none' className="slide-image" />
           </div>
         ))}
       </Slider>
